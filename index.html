@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>NEXORA — Discover. Shop. Elevate.</title>
+    <title>Nexora — Modern Shopping</title>
+
+    <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
@@ -21,30 +23,38 @@
 <header class="navbar">
 
     <div class="logo">
-        <span class="logo-icon">N</span>
-        <span>NEXORA</span>
+        <span>N</span>exora
     </div>
 
-    <nav class="nav-links">
+    <nav id="navMenu">
         <a href="#home">Home</a>
-        <a href="#shop">Shop</a>
+        <a href="#products">Shop</a>
         <a href="#categories">Categories</a>
         <a href="#deals">Deals</a>
     </nav>
 
     <div class="nav-actions">
 
-        <button id="themeToggle" class="icon-btn">
-            🌙
+        <button id="themeBtn">
+            <i class="fa-solid fa-moon"></i>
         </button>
 
         <button class="icon-btn" id="searchBtn">
-            🔍
+            <i class="fa-solid fa-magnifying-glass"></i>
         </button>
 
-        <button class="cart-btn" id="cartBtn">
-            🛒
-            <span id="cartCount">0</span>
+        <button class="icon-btn" id="wishlistBtn">
+            <i class="fa-regular fa-heart"></i>
+            <span class="badge" id="wishlistCount">0</span>
+        </button>
+
+        <button class="icon-btn" id="cartBtn">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="badge" id="cartCount">0</span>
+        </button>
+
+        <button class="menu-btn" id="menuBtn">
+            <i class="fa-solid fa-bars"></i>
         </button>
 
     </div>
@@ -52,7 +62,7 @@
 </header>
 
 
-<!-- ================= SEARCH BAR ================= -->
+<!-- ================= SEARCH ================= -->
 
 <div class="search-box" id="searchBox">
 
@@ -61,6 +71,8 @@
         id="searchInput"
         placeholder="Search products..."
     >
+
+    <i class="fa-solid fa-magnifying-glass"></i>
 
 </div>
 
@@ -71,28 +83,30 @@
 
     <div class="hero-content">
 
-        <span class="hero-badge">
+        <p class="hero-tag">
             ✦ THE FUTURE OF SHOPPING
-        </span>
+        </p>
 
         <h1>
-            Shop Beyond
-            <span>Ordinary.</span>
+            Discover.
+            <span>Choose.</span>
+            Experience.
         </h1>
 
-        <p>
-            Discover premium products, trending styles and
-            everyday essentials — all in one place.
+        <p class="hero-description">
+            Explore premium products, smart deals and everything
+            you need — all in one modern shopping experience.
         </p>
 
         <div class="hero-buttons">
 
-            <a href="#shop" class="primary-btn">
-                Explore Collection →
+            <a href="#products" class="primary-btn">
+                Shop Now
+                <i class="fa-solid fa-arrow-right"></i>
             </a>
 
             <a href="#categories" class="secondary-btn">
-                Browse Categories
+                Explore Categories
             </a>
 
         </div>
@@ -105,7 +119,7 @@
             </div>
 
             <div>
-                <strong>50K+</strong>
+                <strong>25K+</strong>
                 <span>Customers</span>
             </div>
 
@@ -118,38 +132,41 @@
 
     </div>
 
-
     <div class="hero-visual">
 
-        <div class="glow glow-one"></div>
-        <div class="glow glow-two"></div>
-
         <div class="floating-card card-one">
-            🎧
-            <span>Tech</span>
+            <i class="fa-solid fa-truck-fast"></i>
+            <div>
+                <strong>Free Delivery</strong>
+                <small>On orders above ₹999</small>
+            </div>
+        </div>
+
+        <div class="product-orbit">
+
+            <div class="orbit-circle"></div>
+
+            <div class="hero-product">
+                <img
+                    src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=800&q=80"
+                    alt="Headphones"
+                >
+            </div>
+
         </div>
 
         <div class="floating-card card-two">
-            👟
-            <span>Fashion</span>
-        </div>
 
-        <div class="product-orb">
+            <div class="mini-product">
+                <img
+                    src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=200&q=80"
+                    alt="Camera"
+                >
+            </div>
 
-            <div class="orb-content">
-
-                <span>NEW</span>
-
-                <h2>
-                    Next Gen
-                    <br>
-                    Shopping
-                </h2>
-
-                <p>
-                    Curated for you.
-                </p>
-
+            <div>
+                <strong>Trending Now</strong>
+                <small>New arrivals</small>
             </div>
 
         </div>
@@ -161,55 +178,53 @@
 
 <!-- ================= CATEGORIES ================= -->
 
-<section class="categories section" id="categories">
+<section class="section" id="categories">
 
     <div class="section-heading">
 
         <div>
-            <span class="section-tag">EXPLORE</span>
-
-            <h2>
-                Shop by <span>Category</span>
-            </h2>
+            <span>EXPLORE</span>
+            <h2>Shop by Category</h2>
         </div>
 
         <p>
-            Find everything you need, all in one place.
+            Find exactly what you're looking for.
         </p>
 
     </div>
 
-
     <div class="category-grid">
 
-        <button class="category-card active" data-category="all">
-            <div>✨</div>
-            <h3>All</h3>
-            <span>Everything</span>
-        </button>
-
-        <button class="category-card" data-category="fashion">
-            <div>👕</div>
-            <h3>Fashion</h3>
-            <span>Trending styles</span>
-        </button>
-
-        <button class="category-card" data-category="electronics">
-            <div>🎧</div>
+        <button class="category-card" data-category="Electronics">
+            <div class="category-icon">
+                <i class="fa-solid fa-laptop"></i>
+            </div>
             <h3>Electronics</h3>
-            <span>Smart gadgets</span>
+            <p>120+ Products</p>
         </button>
 
-        <button class="category-card" data-category="shoes">
-            <div>👟</div>
-            <h3>Sneakers</h3>
-            <span>Step up</span>
+        <button class="category-card" data-category="Fashion">
+            <div class="category-icon">
+                <i class="fa-solid fa-shirt"></i>
+            </div>
+            <h3>Fashion</h3>
+            <p>250+ Products</p>
         </button>
 
-        <button class="category-card" data-category="accessories">
-            <div>⌚</div>
+        <button class="category-card" data-category="Accessories">
+            <div class="category-icon">
+                <i class="fa-solid fa-headphones"></i>
+            </div>
             <h3>Accessories</h3>
-            <span>Complete your look</span>
+            <p>180+ Products</p>
+        </button>
+
+        <button class="category-card" data-category="Home">
+            <div class="category-icon">
+                <i class="fa-solid fa-house"></i>
+            </div>
+            <h3>Home & Living</h3>
+            <p>150+ Products</p>
         </button>
 
     </div>
@@ -219,39 +234,36 @@
 
 <!-- ================= PRODUCTS ================= -->
 
-<section class="products section" id="shop">
+<section class="section products-section" id="products">
 
     <div class="section-heading">
 
         <div>
-
-            <span class="section-tag">
-                TRENDING NOW
-            </span>
-
-            <h2>
-                Popular <span>Products</span>
-            </h2>
-
+            <span>OUR COLLECTION</span>
+            <h2>Featured Products</h2>
         </div>
 
-        <div class="product-controls">
+        <div class="filters">
 
-            <select id="sortProducts">
+            <button class="filter active" data-filter="All">
+                All
+            </button>
 
-                <option value="default">
-                    Sort by
-                </option>
+            <button class="filter" data-filter="Electronics">
+                Electronics
+            </button>
 
-                <option value="low">
-                    Price: Low to High
-                </option>
+            <button class="filter" data-filter="Fashion">
+                Fashion
+            </button>
 
-                <option value="high">
-                    Price: High to Low
-                </option>
+            <button class="filter" data-filter="Accessories">
+                Accessories
+            </button>
 
-            </select>
+            <button class="filter" data-filter="Home">
+                Home
+            </button>
 
         </div>
 
@@ -259,7 +271,9 @@
 
 
     <div class="product-grid" id="productGrid">
+
         <!-- Products generated by JavaScript -->
+
     </div>
 
 </section>
@@ -271,29 +285,32 @@
 
     <div class="deal-content">
 
-        <span>
-            ⚡ LIMITED TIME OFFER
-        </span>
+        <span>LIMITED TIME OFFER</span>
 
         <h2>
             Upgrade Your
-            <br>
             <strong>Everyday.</strong>
         </h2>
 
         <p>
-            Get up to <strong>50% OFF</strong> on selected products.
+            Get up to 40% off selected products.
+            Don't miss today's exclusive deals.
         </p>
 
-        <button class="primary-btn">
-            Shop Deals →
+        <button class="primary-btn" onclick="scrollToProducts()">
+            Shop Deals
+            <i class="fa-solid fa-arrow-right"></i>
         </button>
 
     </div>
 
     <div class="deal-circle">
-        50%
-        <small>OFF</small>
+
+        <div>
+            <strong>40%</strong>
+            <span>OFF</span>
+        </div>
+
     </div>
 
 </section>
@@ -301,21 +318,18 @@
 
 <!-- ================= NEWSLETTER ================= -->
 
-<section class="newsletter section">
+<section class="newsletter">
 
     <div>
 
-        <span class="section-tag">
-            STAY IN THE LOOP
-        </span>
+        <span>STAY UPDATED</span>
 
         <h2>
-            Don't miss what's <span>next.</span>
+            Get the latest from Nexora.
         </h2>
 
         <p>
-            Get exclusive offers, new arrivals and trends
-            directly in your inbox.
+            New arrivals, exclusive offers and special deals.
         </p>
 
     </div>
@@ -324,12 +338,13 @@
 
         <input
             type="email"
+            id="emailInput"
             placeholder="Enter your email"
             required
         >
 
         <button type="submit">
-            Subscribe →
+            Subscribe
         </button>
 
     </form>
@@ -341,99 +356,96 @@
 
 <footer>
 
-    <div class="footer-main">
+    <div class="footer-grid">
 
         <div class="footer-brand">
 
             <div class="logo">
-                <span class="logo-icon">N</span>
-                NEXORA
+                <span>N</span>exora
             </div>
 
             <p>
-                Discover products that match
-                your lifestyle.
+                Your destination for modern products,
+                smart choices and better shopping.
             </p>
 
             <div class="socials">
-                <a href="#">Instagram</a>
-                <a href="#">LinkedIn</a>
-                <a href="#">X</a>
+
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+
             </div>
 
         </div>
 
 
         <div>
-
-            <h4>Company</h4>
-
-            <a href="#">About</a>
-            <a href="#">Careers</a>
-            <a href="#">Contact</a>
-
+            <h4>Shop</h4>
+            <a href="#products">All Products</a>
+            <a href="#deals">Deals</a>
+            <a href="#categories">Categories</a>
         </div>
 
 
         <div>
-
             <h4>Support</h4>
-
-            <a href="#">Help Center</a>
+            <a href="#">Contact Us</a>
             <a href="#">Shipping</a>
             <a href="#">Returns</a>
-
+            <a href="#">FAQ</a>
         </div>
 
 
         <div>
-
-            <h4>Legal</h4>
-
+            <h4>Company</h4>
+            <a href="#">About Nexora</a>
+            <a href="#">Careers</a>
             <a href="#">Privacy</a>
             <a href="#">Terms</a>
-            <a href="#">Cookies</a>
-
         </div>
 
     </div>
 
-    <div class="footer-bottom">
+    <div class="copyright">
 
-        <span>
-            © 2026 NEXORA. All rights reserved.
-        </span>
+        <p>
+            © 2026 Nexora. All rights reserved.
+        </p>
 
-        <span>
-            Made for the next generation.
-        </span>
+        <p>
+            Made for modern shoppers.
+        </p>
 
     </div>
 
 </footer>
 
 
-<!-- ================= CART DRAWER ================= -->
+<!-- ================= CART SIDEBAR ================= -->
 
 <div class="overlay" id="overlay"></div>
 
-<aside class="cart-drawer" id="cartDrawer">
+<aside class="cart-sidebar" id="cartSidebar">
 
     <div class="cart-header">
 
         <h2>Your Cart</h2>
 
         <button id="closeCart">
-            ✕
+            <i class="fa-solid fa-xmark"></i>
         </button>
 
     </div>
 
     <div id="cartItems" class="cart-items">
 
-        <p class="empty-cart">
-            Your cart is empty.
-        </p>
+        <div class="empty-cart">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <h3>Your cart is empty</h3>
+            <p>Add something you love.</p>
+        </div>
 
     </div>
 
@@ -449,13 +461,70 @@
 
         </div>
 
-        <button class="checkout-btn">
-            Proceed to Checkout →
+        <button class="checkout-btn" id="checkoutBtn">
+            Checkout
+            <i class="fa-solid fa-arrow-right"></i>
         </button>
 
     </div>
 
 </aside>
+
+
+<!-- ================= CHECKOUT MODAL ================= -->
+
+<div class="modal" id="checkoutModal">
+
+    <div class="modal-content">
+
+        <button class="modal-close" id="closeModal">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="checkout-icon">
+            <i class="fa-solid fa-lock"></i>
+        </div>
+
+        <h2>Secure Checkout</h2>
+
+        <p>
+            Your order is almost ready.
+        </p>
+
+        <form id="checkoutForm">
+
+            <input
+                type="text"
+                placeholder="Full Name"
+                required
+            >
+
+            <input
+                type="email"
+                placeholder="Email Address"
+                required
+            >
+
+            <input
+                type="text"
+                placeholder="Delivery Address"
+                required
+            >
+
+            <button type="submit" class="checkout-btn">
+                Place Order
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<div class="toast" id="toast">
+    Product added to cart!
+</div>
 
 
 <script src="script.js"></script>
