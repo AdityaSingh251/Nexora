@@ -421,7 +421,136 @@
     </div>
 
 </footer>
+<!-- ================= NEWSLETTER ================= -->
 
+<section class="newsletter">
+    ...
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+    ...
+</footer>
+
+
+<!-- ================= PRODUCT DETAILS MODAL ================= -->
+
+<div class="product-modal" id="productModal">
+
+    <div class="product-modal-content">
+
+        <button class="product-modal-close" id="closeProductModal">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="product-modal-image">
+            <img id="modalProductImage" src="" alt="Product">
+        </div>
+
+        <div class="product-modal-info">
+
+            <span id="modalProductCategory"></span>
+
+            <h2 id="modalProductName"></h2>
+
+            <div class="rating">
+                <span>★★★★★</span>
+                <small id="modalRating">4.8</small>
+            </div>
+
+            <div class="modal-price">
+
+                <strong id="modalProductPrice"></strong>
+
+                <del id="modalOldPrice"></del>
+
+                <span>20% OFF</span>
+
+            </div>
+
+            <p class="modal-description">
+                Premium quality product designed for modern
+                lifestyles. Enjoy excellent performance,
+                stylish design and reliable everyday use.
+            </p>
+
+            <div class="quantity-control">
+
+                <button id="decreaseQty">−</button>
+
+                <span id="productQty">1</span>
+
+                <button id="increaseQty">+</button>
+
+            </div>
+
+            <button
+                class="modal-add-cart"
+                id="modalAddCart"
+            >
+                <i class="fa-solid fa-bag-shopping"></i>
+                Add to Cart
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ================= CART SIDEBAR ================= -->
+
+<div class="overlay" id="overlay"></div>
+
+<aside class="cart-sidebar" id="cartSidebar">
+
+    <div class="cart-header">
+
+        <h2>Your Cart</h2>
+
+        <button id="closeCart">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+    </div>
+
+    <div id="cartItems" class="cart-items">
+
+        <div class="empty-cart">
+
+            <i class="fa-solid fa-bag-shopping"></i>
+
+            <h3>Your cart is empty</h3>
+
+            <p>Add something you love.</p>
+
+        </div>
+
+    </div>
+
+    <div class="cart-footer">
+
+        <div class="cart-total">
+
+            <span>Total</span>
+
+            <strong id="cartTotal">
+                ₹0
+            </strong>
+
+        </div>
+
+        <button class="checkout-btn" id="checkoutBtn">
+            Checkout
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+    </div>
+
+</aside>
 
 <!-- ================= CART SIDEBAR ================= -->
 
