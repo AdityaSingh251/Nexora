@@ -3,41 +3,16 @@
 ========================================= */
 
 const products = [
+const products = [
+
+    // ================= ELECTRONICS =================
 
     {
         id: 1,
         name: "Nova Wireless Headphones",
         category: "Electronics",
         price: 2499,
-        image:
-        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=700&q=80"
-    },
-
-    {
-        id: 2,
-        name: "Urban Smart Watch",
-        category: "Accessories",
-        price: 3299,
-        image:
-        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=700&q=80"
-    },
-
-    {
-        id: 3,
-        name: "Minimal Leather Bag",
-        category: "Fashion",
-        price: 1899,
-        image:
-        "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=700&q=80"
-    },
-
-    {
-        id: 4,
-        name: "Modern Sneakers",
-        category: "Fashion",
-        price: 2799,
-        image:
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=80"
+        image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=700&q=80"
     },
 
     {
@@ -45,26 +20,66 @@ const products = [
         name: "Premium Camera",
         category: "Electronics",
         price: 45999,
-        image:
-        "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=700&q=80"
+        image: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=700&q=80"
     },
 
     {
-        id: 6,
-        name: "Aero Sunglasses",
-        category: "Accessories",
-        price: 1499,
-        image:
-        "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=700&q=80"
+        id: 9,
+        name: "Nexora Pro Laptop",
+        category: "Electronics",
+        price: 54999,
+        image: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=700&q=80"
     },
 
     {
-        id: 7,
-        name: "Modern Table Lamp",
-        category: "Home",
-        price: 1199,
-        image:
-        "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=700&q=80"
+        id: 10,
+        name: "Ultra HD Smart TV",
+        category: "Electronics",
+        price: 42999,
+        image: "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=700&q=80"
+    },
+
+    {
+        id: 11,
+        name: "Nexora Wireless Speaker",
+        category: "Electronics",
+        price: 3499,
+        image: "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=700&q=80"
+    },
+
+    {
+        id: 12,
+        name: "Smartphone X Pro",
+        category: "Electronics",
+        price: 32999,
+        image: "https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=700&q=80"
+    },
+
+    {
+        id: 13,
+        name: "Mechanical Gaming Keyboard",
+        category: "Electronics",
+        price: 2999,
+        image: "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=700&q=80"
+    },
+
+
+    // ================= FASHION =================
+
+    {
+        id: 3,
+        name: "Minimal Leather Bag",
+        category: "Fashion",
+        price: 1899,
+        image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=700&q=80"
+    },
+
+    {
+        id: 4,
+        name: "Modern Sneakers",
+        category: "Fashion",
+        price: 2799,
+        image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=80"
     },
 
     {
@@ -72,8 +87,37 @@ const products = [
         name: "Classic Backpack",
         category: "Fashion",
         price: 1699,
-        image:
-        "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=700&q=80"
+        image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=700&q=80"
+    },
+
+
+    // ================= ACCESSORIES =================
+
+    {
+        id: 2,
+        name: "Urban Smart Watch",
+        category: "Accessories",
+        price: 3299,
+        image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=700&q=80"
+    },
+
+    {
+        id: 6,
+        name: "Aero Sunglasses",
+        category: "Accessories",
+        price: 1499,
+        image: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=700&q=80"
+    },
+
+
+    // ================= HOME =================
+
+    {
+        id: 7,
+        name: "Modern Table Lamp",
+        category: "Home",
+        price: 1199,
+        image: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=700&q=80"
     }
 
 ];
