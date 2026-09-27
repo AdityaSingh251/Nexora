@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>ShopEase | Modern E-Commerce</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+>
+```
+
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+```
+<div class="logo">
+    <span>Shop</span>Ease
+</div>
+
+<nav class="navbar" id="navbar">
+    <a href="#home">Home</a>
+    <a href="#shop">Shop</a>
+    <a href="#categories">Categories</a>
+    <a href="#offers">Offers</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="header-actions">
+
+    <button id="themeToggle">
+        <i class="fa-solid fa-moon"></i>
+    </button>
+
+    <button class="cart-btn" id="cartButton">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="cartCount">0</span>
+    </button>
+
+    <button class="menu-btn" id="menuBtn">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+</div>
+```
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+```
+<div class="hero-content">
+
+    <p class="hero-small">
+        ✨ New Collection 2026
+    </p>
+
+    <h1>
+        Shop Smarter.<br>
+        Live <span>Better.</span>
+    </h1>
+
+    <p>
+        Discover premium products, exclusive deals,
+        and everything you need in one place.
+    </p>
+
+    <div class="hero-buttons">
+
+        <a href="#shop" class="primary-btn">
+            Shop Now
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <a href="#offers" class="secondary-btn">
+            View Offers
+        </a>
+
+    </div>
+
+</div>
+
+<div class="hero-image">
+
+    <div class="floating-card card-one">
+        <i class="fa-solid fa-truck-fast"></i>
+        Free Delivery
+    </div>
+
+    <div class="product-circle">
+        🛍️
+    </div>
+
+    <div class="floating-card card-two">
+        <i class="fa-solid fa-shield-halved"></i>
+        Secure Payment
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- ================= FEATURES ================= -->
+
+<section class="features">
+
+```
+<div class="feature">
+    <i class="fa-solid fa-truck-fast"></i>
+
+    <div>
+        <h3>Free Shipping</h3>
+        <p>On orders above ₹999</p>
+    </div>
+</div>
+
+<div class="feature">
+    <i class="fa-solid fa-rotate-left"></i>
+
+    <div>
+        <h3>Easy Returns</h3>
+        <p>7-day return policy</p>
+    </div>
+</div>
+
+<div class="feature">
+    <i class="fa-solid fa-lock"></i>
+
+    <div>
+        <h3>Secure Payment</h3>
+        <p>100% secure checkout</p>
+    </div>
+</div>
+
+<div class="feature">
+    <i class="fa-solid fa-headset"></i>
+
+    <div>
+        <h3>24/7 Support</h3>
+        <p>We're here to help</p>
+    </div>
+</div>
+```
+
+</section>
+
+<!-- ================= CATEGORIES ================= -->
+
+<section class="section" id="categories">
+
+```
+<div class="section-heading">
+
+    <div>
+        <p class="section-label">EXPLORE</p>
+
+        <h2>Shop by Category</h2>
+    </div>
+
+</div>
+
+<div class="categories">
+
+    <div class="category">
+        <div class="category-icon">👕</div>
+        <h3>Fashion</h3>
+        <p>120+ Products</p>
+    </div>
+
+    <div class="category">
+        <div class="category-icon">📱</div>
+        <h3>Electronics</h3>
+        <p>80+ Products</p>
+    </div>
+
+    <div class="category">
+        <div class="category-icon">⌚</div>
+        <h3>Accessories</h3>
+        <p>60+ Products</p>
+    </div>
+
+    <div class="category">
+        <div class="category-icon">🏠</div>
+        <h3>Home</h3>
+        <p>100+ Products</p>
+    </div>
+
+    <div class="category">
+        <div class="category-icon">👟</div>
+        <h3>Footwear</h3>
+        <p>90+ Products</p>
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- ================= SHOP ================= -->
+
+<section class="section products-section" id="shop">
+
+```
+<div class="section-heading">
+
+    <div>
+        <p class="section-label">OUR STORE</p>
+
+        <h2>Trending Products</h2>
+    </div>
+
+    <div class="shop-controls">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search products..."
+        >
+
+        <select id="categoryFilter">
+
+            <option value="all">
+                All Categories
+            </option>
+
+            <option value="fashion">
+                Fashion
+            </option>
+
+            <option value="electronics">
+                Electronics
+            </option>
+
+            <option value="accessories">
+                Accessories
+            </option>
+
+            <option value="home">
+                Home
+            </option>
+
+        </select>
+
+    </div>
+
+</div>
+
+
+<div class="products-grid" id="productsGrid"></div>
+```
+
+</section>
+
+<!-- ================= OFFER ================= -->
+
+<section class="offer-section" id="offers">
+
+```
+<div class="offer-content">
+
+    <p>LIMITED TIME OFFER</p>
+
+    <h2>
+        Get up to
+        <span>50% OFF</span>
+    </h2>
+
+    <p>
+        Upgrade your lifestyle with our exclusive
+        collection at amazing prices.
+    </p>
+
+    <a href="#shop" class="primary-btn">
+        Shop Offers
+    </a>
+
+</div>
+
+<div class="offer-shape">
+    50%
+</div>
+```
+
+</section>
+
+<!-- ================= NEWSLETTER ================= -->
+
+<section class="newsletter">
+
+```
+<div>
+
+    <p class="section-label">
+        STAY UPDATED
+    </p>
+
+    <h2>
+        Get the latest deals
+    </h2>
+
+    <p>
+        Subscribe to receive exclusive offers
+        and new product updates.
+    </p>
+
+</div>
+
+<form id="newsletterForm">
+
+    <input
+        type="email"
+        id="emailInput"
+        placeholder="Enter your email"
+        required
+    >
+
+    <button type="submit">
+        Subscribe
+    </button>
+
+</form>
+```
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer id="contact">
+
+```
+<div class="footer-grid">
+
+    <div class="footer-brand">
+
+        <div class="logo">
+            <span>Shop</span>Ease
+        </div>
+
+        <p>
+            Your destination for modern,
+            affordable and premium products.
+        </p>
+
+        <div class="socials">
+
+            <a href="#">
+                <i class="fab fa-facebook"></i>
+            </a>
+
+            <a href="#">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="#">
+                <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a href="#">
+                <i class="fab fa-x-twitter"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div>
+
+        <h3>Quick Links</h3>
+
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#categories">Categories</a>
+        <a href="#offers">Offers</a>
+
+    </div>
+
+
+    <div>
+
+        <h3>Customer Care</h3>
+
+        <a href="#">My Account</a>
+        <a href="#">Track Order</a>
+        <a href="#">Returns</a>
+        <a href="#">Help Center</a>
+
+    </div>
+
+
+    <div>
+
+        <h3>Contact</h3>
+
+        <p>
+            <i class="fa-solid fa-envelope"></i>
+            support@shopease.com
+        </p>
+
+        <p>
+            <i class="fa-solid fa-phone"></i>
+            +91 98765 43210
+        </p>
+
+        <p>
+            <i class="fa-solid fa-location-dot"></i>
+            India
+        </p>
+
+    </div>
+
+</div>
+
+<div class="copyright">
+    © 2026 ShopEase. All Rights Reserved.
+</div>
+```
+
+</footer>
+
+<!-- ================= CART SIDEBAR ================= -->
+
+<div class="cart-overlay" id="cartOverlay"></div>
+
+<aside class="cart-sidebar" id="cartSidebar">
+
+```
+<div class="cart-header">
+
+    <h2>Your Cart</h2>
+
+    <button id="closeCart">
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+
+</div>
+
+
+<div id="cartItems" class="cart-items">
+
+    <p class="empty-cart">
+        Your cart is empty.
+    </p>
+
+</div>
+
+
+<div class="cart-bottom">
+
+    <div class="cart-total">
+
+        <span>Total</span>
+
+        <strong id="cartTotal">
+            ₹0
+        </strong>
+
+    </div>
+
+    <button class="checkout-btn" id="checkoutBtn">
+        Proceed to Checkout
+    </button>
+
+</div>
+```
+
+</aside>
+
+<!-- ================= CHECKOUT MODAL ================= -->
+
+<div class="modal" id="checkoutModal">
+
+```
+<div class="modal-box">
+
+    <button class="modal-close" id="closeModal">
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <h2>Checkout</h2>
+
+    <p>
+        Complete your order details.
+    </p>
+
+    <form id="checkoutForm">
+
+        <input
+            type="text"
+            placeholder="Full Name"
+            required
+        >
+
+        <input
+            type="email"
+            placeholder="Email Address"
+            required
+        >
+
+        <input
+            type="text"
+            placeholder="Delivery Address"
+            required
+        >
+
+        <input
+            type="text"
+            placeholder="City"
+            required
+        >
+
+        <button type="submit" class="primary-btn">
+            Place Order
+        </button>
+
+    </form>
+
+</div>
+```
+
+</div>
+
+<div class="toast" id="toast">
+    Product added to cart 🛒
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
